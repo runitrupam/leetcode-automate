@@ -1,0 +1,822 @@
+########################## 2023-07-12 11:11:18.223763 ##########################
+Output will be written to message.log
+User is logged in.
+
+    newer theme is already on to scrap data
+Going with the ->  Python3 language
+{'data': {'problemset_question_list': None,
+          'question': None,
+          'user': {'is_current_user_premium': False,
+                   'username': 'runitranjankumar'}}}
+{'data': {'problemset_question_list': None,
+          'question': None,
+          'user': {'is_current_user_premium': False,
+                   'username': 'runitranjankumar'}}}
+Fetch questionId using leetcode.auth
+Fetch Language Id to Name mapping using requests
+trying the solution 0 https://leetcode.com/problems/find-eventual-safe-states/solutions/3753085/python3-dfs-dp/
+Updating code in the editor {'data': {'problemset_question_list': None, 'question': None, 'user': None}}
+Not able to choose the solution ('Error in Code for solution_id = ', 3752393)
+trying the solution 1 https://leetcode.com/problems/find-eventual-safe-states/solutions/3752393/best-c-java-code-commented-dfs/
+Updating code in the editor {'data': {'problemset_question_list': None, 'question': None, 'user': None}}
+    newer theme is already on to scrap data      
+code fetched =  
+class Solution:
+    def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
+        n=len(graph)
+        safe={}
+        ans=[]
+        def dfs(i):
+            if i in safe:
+                return safe[i]
+
+            safe[i]=False
+            for nei in graph[i]:
+                if not dfs(nei):
+                    return safe[i]
+
+            safe[i]=True
+            return safe[i]
+
+        for i in range(n):
+            if dfs(i):
+                ans.append(i)
+
+        return ans                        
+language used for submit= Python3
+Solution submitted and saved in the dir = leet_code_daily_solutions and file name =  find-eventual-safe-states  2023 07 12   11 13 10
+########################## 2023-07-12 11:15:02.583458 ##########################
+Output will be written to message.log
+User is logged in.
+
+########################## 2023-07-12 11:20:07.772876 ##########################
+Output will be written to message.log
+User is logged in.
+
+Getting the title and link for each solved question.
+Error in getting the question links Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="reactable-next-page"]"}
+  (Session info: chrome=114.0.5735.198); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001048cff48 chromedriver + 4226888
+1   chromedriver                        0x00000001048c84f4 chromedriver + 4195572
+2   chromedriver                        0x000000010450cd68 chromedriver + 281960
+3   chromedriver                        0x0000000104547fc8 chromedriver + 524232
+4   chromedriver                        0x000000010457ec58 chromedriver + 748632
+5   chromedriver                        0x000000010453bf1c chromedriver + 474908
+6   chromedriver                        0x000000010453cef4 chromedriver + 478964
+7   chromedriver                        0x000000010489159c chromedriver + 3970460
+8   chromedriver                        0x00000001048956f0 chromedriver + 3987184
+9   chromedriver                        0x000000010489b5b4 chromedriver + 4011444
+10  chromedriver                        0x00000001048962fc chromedriver + 3990268
+11  chromedriver                        0x000000010486e1c0 chromedriver + 3826112
+12  chromedriver                        0x00000001048b2088 chromedriver + 4104328
+13  chromedriver                        0x00000001048b21e0 chromedriver + 4104672
+14  chromedriver                        0x00000001048c1f28 chromedriver + 4169512
+15  libsystem_pthread.dylib             0x00000001a7867fa8 _pthread_start + 148
+16  libsystem_pthread.dylib             0x00000001a7862da0 thread_start + 8
+
+Export all the title and links to a json file
+Code exists for :-  Two Sum
+Code exists for :-  Add Two Numbers
+Code exists for :-  Longest Substring Without Repeating Characters
+Code exists for :-  Median of Two Sorted Arrays
+Code exists for :-  Longest Palindromic Substring
+Code exists for :-  Zigzag Conversion
+Code exists for :-  Reverse Integer
+Code exists for :-  String to Integer (atoi)
+Code exists for :-  Container With Most Water
+Code exists for :-  Integer to Roman
+Code exists for :-  Longest Common Prefix
+Code exists for :-  3Sum Closest
+Code exists for :-  Remove Nth Node From End of List
+Code exists for :-  Valid Parentheses
+Code exists for :-  Merge Two Sorted Lists
+Code exists for :-  Merge k Sorted Lists
+Code exists for :-  Swap Nodes in Pairs
+Code exists for :-  Remove Duplicates from Sorted Array
+Code exists for :-  Remove Element
+Code exists for :-  Find the Index of the First Occurrence in a String
+Code exists for :-  Search in Rotated Sorted Array
+Code exists for :-  Search Insert Position
+Code exists for :-  Valid Sudoku
+Code exists for :-  Count and Say
+Code exists for :-  Combination Sum
+Code exists for :-  Combination Sum II
+Code exists for :-  Trapping Rain Water
+Code exists for :-  Multiply Strings
+Code exists for :-  Jump Game II
+Code exists for :-  Permutations
+Code exists for :-  Group Anagrams
+Code exists for :-  Maximum Subarray
+Code exists for :-  Spiral Matrix
+Code exists for :-  Jump Game
+Code exists for :-  Merge Intervals
+Code exists for :-  Insert Interval
+Code exists for :-  Spiral Matrix II
+Code exists for :-  Rotate List
+Code exists for :-  Unique Paths
+Code exists for :-  Unique Paths II
+Code exists for :-  Minimum Path Sum
+Code exists for :-  Add Binary
+Code exists for :-  Climbing Stairs
+Code exists for :-  Simplify Path
+Code exists for :-  Edit Distance
+Code exists for :-  Set Matrix Zeroes
+Code exists for :-  Search a 2D Matrix
+Code exists for :-  Minimum Window Substring
+Code exists for :-  Word Search
+Code exists for :-  Scramble String
+Code exists for :-  Merge Sorted Array
+Code exists for :-  Subsets II
+Code exists for :-  Decode Ways
+Code exists for :-  Reverse Linked List II
+Code exists for :-  Restore IP Addresses
+Code exists for :-  Unique Binary Search Trees II
+Code exists for :-  Unique Binary Search Trees
+Code exists for :-  Validate Binary Search Tree
+Code exists for :-  Same Tree
+Code exists for :-  Symmetric Tree
+Code exists for :-  Binary Tree Level Order Traversal
+Code exists for :-  Binary Tree Zigzag Level Order Traversal
+Code exists for :-  Maximum Depth of Binary Tree
+Code exists for :-  Construct Binary Tree from Inorder and Postorder Traversal
+Code exists for :-  Convert Sorted Array to Binary Search Tree
+Code exists for :-  Convert Sorted List to Binary Search Tree
+Code exists for :-  Balanced Binary Tree
+Scraping the code for :-  Minimum Depth of Binary Tree
+    newer theme is already on to scrap data      
+Code exists for :-  Populating Next Right Pointers in Each Node
+Code exists for :-  Pascal's Triangle
+Code exists for :-  Pascal's Triangle II
+Code exists for :-  Triangle
+Code exists for :-  Best Time to Buy and Sell Stock
+Code exists for :-  Best Time to Buy and Sell Stock II
+Code exists for :-  Best Time to Buy and Sell Stock III
+Code exists for :-  Binary Tree Maximum Path Sum
+Code exists for :-  Sum Root to Leaf Numbers
+Code exists for :-  Palindrome Partitioning
+Code exists for :-  Clone Graph
+Code exists for :-  Gas Station
+Code exists for :-  Single Number II
+Code exists for :-  Word Break
+Code exists for :-  Linked List Cycle
+Code exists for :-  Linked List Cycle II
+Code exists for :-  Binary Tree Preorder Traversal
+Code exists for :-  Sort List
+Code exists for :-  Max Points on a Line
+Code exists for :-  Evaluate Reverse Polish Notation
+Code exists for :-  Reverse Words in a String
+Code exists for :-  Maximum Product Subarray
+Code exists for :-  Find Minimum in Rotated Sorted Array
+Code exists for :-  Min Stack
+Code exists for :-  Intersection of Two Linked Lists
+Code exists for :-  Binary Search Tree Iterator
+Code exists for :-  House Robber
+Code exists for :-  Binary Tree Right Side View
+Code exists for :-  Number of Islands
+Code exists for :-  Happy Number
+Code exists for :-  Remove Linked List Elements
+Code exists for :-  Isomorphic Strings
+Code exists for :-  Reverse Linked List
+Code exists for :-  Implement Trie (Prefix Tree)
+Code exists for :-  Minimum Size Subarray Sum
+Code exists for :-  Course Schedule II
+Code exists for :-  Design Add and Search Words Data Structure
+Code exists for :-  Word Search II
+Code exists for :-  House Robber II
+Code exists for :-  Contains Duplicate II
+Code exists for :-  Maximal Square
+Code exists for :-  Count Complete Tree Nodes
+Code exists for :-  Rectangle Area
+Code exists for :-  Basic Calculator
+Code exists for :-  Invert Binary Tree
+Code exists for :-  Basic Calculator II
+Code exists for :-  Summary Ranges
+Code exists for :-  Kth Smallest Element in a BST
+Code exists for :-  Implement Queue using Stacks
+Code exists for :-  Palindrome Linked List
+Code exists for :-  Lowest Common Ancestor of a Binary Search Tree
+Code exists for :-  Delete Node in a Linked List
+Code exists for :-  Add Digits
+Code exists for :-  Ugly Number
+Code exists for :-  Ugly Number II
+Code exists for :-  First Bad Version
+Code exists for :-  Perfect Squares
+Code exists for :-  Move Zeroes
+Code exists for :-  Word Pattern
+Code exists for :-  Find Median from Data Stream
+Code exists for :-  Bulls and Cows
+Code exists for :-  Longest Increasing Subsequence
+Code exists for :-  Range Sum Query - Immutable
+Code exists for :-  Range Sum Query 2D - Immutable
+Code exists for :-  Best Time to Buy and Sell Stock with Cooldown
+Code exists for :-  Bulb Switcher
+Code exists for :-  Coin Change
+Code exists for :-  Odd Even Linked List
+Code exists for :-  Patching Array
+Code exists for :-  Verify Preorder Serialization of a Binary Tree
+Code exists for :-  Increasing Triplet Subsequence
+Code exists for :-  House Robber III
+Code exists for :-  Integer Break
+Code exists for :-  Reverse Vowels of a String
+Code exists for :-  Top K Frequent Elements
+Code exists for :-  Data Stream as Disjoint Intervals
+Code exists for :-  Find K Pairs with Smallest Sums
+Code exists for :-  Guess Number Higher or Lower
+Code exists for :-  Wiggle Subsequence
+Code exists for :-  Combination Sum IV
+Scraping the code for :-  Insert Delete GetRandom O(1)
+    newer theme is already on to scrap data      
+Code exists for :-  Linked List Random Node
+Code exists for :-  Is Subsequence
+Code exists for :-  Decode String
+Code exists for :-  Evaluate Division
+Code exists for :-  Longest Palindrome
+Code exists for :-  Arithmetic Slices
+Code exists for :-  Third Maximum Number
+Code exists for :-  Add Strings
+Code exists for :-  Partition Equal Subset Sum
+Scraping the code for :-  Pacific Atlantic Water Flow
+    newer theme is already on to scrap data      
+Scraping the code for :-  Longest Repeating Character Replacement
+    newer theme is already on to scrap data      
+Scraping the code for :-  Construct Quad Tree
+    newer theme is already on to scrap data      
+Error in copying the solution of https://leetcode.com/problems/construct-quad-tree Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="qd-content"]/div[3]/div/div[1]/div/div[1]/div[2]/div[7]/div/div"}
+  (Session info: chrome=114.0.5735.198); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001048cff48 chromedriver + 4226888
+1   chromedriver                        0x00000001048c84f4 chromedriver + 4195572
+2   chromedriver                        0x000000010450cd68 chromedriver + 281960
+3   chromedriver                        0x0000000104547fc8 chromedriver + 524232
+4   chromedriver                        0x000000010457ec58 chromedriver + 748632
+5   chromedriver                        0x000000010453bf1c chromedriver + 474908
+6   chromedriver                        0x000000010453cef4 chromedriver + 478964
+7   chromedriver                        0x000000010489159c chromedriver + 3970460
+8   chromedriver                        0x00000001048956f0 chromedriver + 3987184
+9   chromedriver                        0x000000010489b5b4 chromedriver + 4011444
+10  chromedriver                        0x00000001048962fc chromedriver + 3990268
+11  chromedriver                        0x000000010486e1c0 chromedriver + 3826112
+12  chromedriver                        0x00000001048b2088 chromedriver + 4104328
+13  chromedriver                        0x00000001048b21e0 chromedriver + 4104672
+14  chromedriver                        0x00000001048c1f28 chromedriver + 4169512
+15  libsystem_pthread.dylib             0x00000001a7867fa8 _pthread_start + 148
+16  libsystem_pthread.dylib             0x00000001a7862da0 thread_start + 8
+
+Scraping the code for :-  Flatten a Multilevel Doubly Linked List
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Genetic Mutation
+    newer theme is already on to scrap data      
+Scraping the code for :-  Path Sum III
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find All Anagrams in a String
+    newer theme is already on to scrap data      
+Scraping the code for :-  String Compression
+    newer theme is already on to scrap data      
+Scraping the code for :-  Arithmetic Slices II - Subsequence
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find All Numbers Disappeared in an Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sort Characters By Frequency
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Number of Arrows to Burst Balloons
+    newer theme is already on to scrap data      
+Scraping the code for :-  LFU Cache
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Moves to Equal Array Elements II
+    newer theme is already on to scrap data      
+Scraping the code for :-  Concatenated Words
+    newer theme is already on to scrap data      
+Scraping the code for :-  Max Consecutive Ones
+    newer theme is already on to scrap data      
+Scraping the code for :-  Non-decreasing Subsequences
+    newer theme is already on to scrap data      
+Scraping the code for :-  IPO
+    newer theme is already on to scrap data      
+Scraping the code for :-  Fibonacci Number
+    newer theme is already on to scrap data      
+Scraping the code for :-  Longest Palindromic Subsequence
+    newer theme is already on to scrap data      
+Scraping the code for :-  Coin Change II
+    newer theme is already on to scrap data      
+Scraping the code for :-  Detect Capital
+    newer theme is already on to scrap data      
+Scraping the code for :-  Longest Uncommon Subsequence II
+    newer theme is already on to scrap data      
+Scraping the code for :-  Continuous Subarray Sum
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Absolute Difference in BST
+    newer theme is already on to scrap data      
+Scraping the code for :-  Complex Number Multiplication
+    newer theme is already on to scrap data      
+Scraping the code for :-  Single Element in a Sorted Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Diameter of Binary Tree
+    newer theme is already on to scrap data      
+Scraping the code for :-  Number of Provinces
+    newer theme is already on to scrap data      
+Scraping the code for :-  Array Nesting
+    newer theme is already on to scrap data      
+Scraping the code for :-  Permutation in String
+    newer theme is already on to scrap data      
+Scraping the code for :-  Erect the Fence
+    newer theme is already on to scrap data      
+Scraping the code for :-  N-ary Tree Preorder Traversal
+    newer theme is already on to scrap data      
+Scraping the code for :-  Range Addition II
+    newer theme is already on to scrap data      
+Scraping the code for :-  Can Place Flowers
+    newer theme is already on to scrap data      
+Scraping the code for :-  Task Scheduler
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sum of Square Numbers
+    newer theme is already on to scrap data      
+Scraping the code for :-  Set Mismatch
+    newer theme is already on to scrap data      
+Scraping the code for :-  Dota2 Senate
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find Duplicate Subtrees
+    newer theme is already on to scrap data      
+Scraping the code for :-  Two Sum IV - Input is a BST
+    newer theme is already on to scrap data      
+Scraping the code for :-  Maximum Width of Binary Tree
+    newer theme is already on to scrap data      
+Scraping the code for :-  Top K Frequent Words
+    newer theme is already on to scrap data      
+Scraping the code for :-  Kth Largest Element in a Stream
+    newer theme is already on to scrap data      
+Scraping the code for :-  Binary Search
+    newer theme is already on to scrap data      
+Scraping the code for :-  Design HashSet
+    newer theme is already on to scrap data      
+Scraping the code for :-  Design Linked List
+    newer theme is already on to scrap data      
+Scraping the code for :-  Best Time to Buy and Sell Stock with Transaction Fee
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find Pivot Index
+    newer theme is already on to scrap data      
+Scraping the code for :-  Flood Fill
+    newer theme is already on to scrap data      
+Scraping the code for :-  Asteroid Collision
+    newer theme is already on to scrap data      
+Scraping the code for :-  Monotone Increasing Digits
+    newer theme is already on to scrap data      
+Scraping the code for :-  Daily Temperatures
+    newer theme is already on to scrap data      
+Scraping the code for :-  Delete and Earn
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find Smallest Letter Greater Than Target
+    newer theme is already on to scrap data      
+Scraping the code for :-  Min Cost Climbing Stairs
+    newer theme is already on to scrap data      
+Scraping the code for :-  Toeplitz Matrix
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Distance Between BST Nodes
+    newer theme is already on to scrap data      
+Scraping the code for :-  Is Graph Bipartite?
+    newer theme is already on to scrap data      
+Scraping the code for :-  Cheapest Flights Within K Stops
+    newer theme is already on to scrap data      
+Unable to choose Accepted solution, picking the 1st solution Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.198)
+Stacktrace:
+0   chromedriver                        0x00000001048cff48 chromedriver + 4226888
+1   chromedriver                        0x00000001048c84f4 chromedriver + 4195572
+2   chromedriver                        0x000000010450cd68 chromedriver + 281960
+3   chromedriver                        0x00000001044f5db4 chromedriver + 187828
+4   chromedriver                        0x00000001044f5b9c chromedriver + 187292
+5   chromedriver                        0x000000010457e4a4 chromedriver + 746660
+6   chromedriver                        0x000000010453bf1c chromedriver + 474908
+7   chromedriver                        0x000000010453cef4 chromedriver + 478964
+8   chromedriver                        0x000000010489159c chromedriver + 3970460
+9   chromedriver                        0x00000001048956f0 chromedriver + 3987184
+10  chromedriver                        0x000000010489b5b4 chromedriver + 4011444
+11  chromedriver                        0x00000001048962fc chromedriver + 3990268
+12  chromedriver                        0x000000010486e1c0 chromedriver + 3826112
+13  chromedriver                        0x00000001048b2088 chromedriver + 4104328
+14  chromedriver                        0x00000001048b21e0 chromedriver + 4104672
+15  chromedriver                        0x00000001048c1f28 chromedriver + 4169512
+16  libsystem_pthread.dylib             0x00000001a7867fa8 _pthread_start + 148
+17  libsystem_pthread.dylib             0x00000001a7862da0 thread_start + 8
+
+Some error in main Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=114.0.5735.198)
+Stacktrace:
+0   chromedriver                        0x00000001048cff48 chromedriver + 4226888
+1   chromedriver                        0x00000001048c84f4 chromedriver + 4195572
+2   chromedriver                        0x000000010450cd68 chromedriver + 281960
+3   chromedriver                        0x00000001044f5db4 chromedriver + 187828
+4   chromedriver                        0x00000001044f5b9c chromedriver + 187292
+5   chromedriver                        0x000000010457e4a4 chromedriver + 746660
+6   chromedriver                        0x000000010453bf1c chromedriver + 474908
+7   chromedriver                        0x000000010453cef4 chromedriver + 478964
+8   chromedriver                        0x000000010489159c chromedriver + 3970460
+9   chromedriver                        0x00000001048956f0 chromedriver + 3987184
+10  chromedriver                        0x000000010489b5b4 chromedriver + 4011444
+11  chromedriver                        0x00000001048962fc chromedriver + 3990268
+12  chromedriver                        0x000000010486e1c0 chromedriver + 3826112
+13  chromedriver                        0x00000001048b2088 chromedriver + 4104328
+14  chromedriver                        0x00000001048b21e0 chromedriver + 4104672
+15  chromedriver                        0x00000001048c1f28 chromedriver + 4169512
+16  libsystem_pthread.dylib             0x00000001a7867fa8 _pthread_start + 148
+17  libsystem_pthread.dylib             0x00000001a7862da0 thread_start + 8
+
+########################## 2023-07-12 22:19:29.408364 ##########################
+Output will be written to message.log
+########################## 2023-07-12 22:19:51.429712 ##########################
+Output will be written to message.log
+User is logged in.
+
+Getting the title and link for each solved question.
+Error in getting the question links Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class="reactable-next-page"]"}
+  (Session info: chrome=114.0.5735.198); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001027cbf48 chromedriver + 4226888
+1   chromedriver                        0x00000001027c44f4 chromedriver + 4195572
+2   chromedriver                        0x0000000102408d68 chromedriver + 281960
+3   chromedriver                        0x0000000102443fc8 chromedriver + 524232
+4   chromedriver                        0x000000010247ac58 chromedriver + 748632
+5   chromedriver                        0x0000000102437f1c chromedriver + 474908
+6   chromedriver                        0x0000000102438ef4 chromedriver + 478964
+7   chromedriver                        0x000000010278d59c chromedriver + 3970460
+8   chromedriver                        0x00000001027916f0 chromedriver + 3987184
+9   chromedriver                        0x00000001027975b4 chromedriver + 4011444
+10  chromedriver                        0x00000001027922fc chromedriver + 3990268
+11  chromedriver                        0x000000010276a1c0 chromedriver + 3826112
+12  chromedriver                        0x00000001027ae088 chromedriver + 4104328
+13  chromedriver                        0x00000001027ae1e0 chromedriver + 4104672
+14  chromedriver                        0x00000001027bdf28 chromedriver + 4169512
+15  libsystem_pthread.dylib             0x000000018ed93fa8 _pthread_start + 148
+16  libsystem_pthread.dylib             0x000000018ed8eda0 thread_start + 8
+
+Export all the title and links to a json file
+Code exists for :-  Two Sum
+Code exists for :-  Add Two Numbers
+Code exists for :-  Longest Substring Without Repeating Characters
+Code exists for :-  Median of Two Sorted Arrays
+Code exists for :-  Longest Palindromic Substring
+Code exists for :-  Zigzag Conversion
+Code exists for :-  Reverse Integer
+Code exists for :-  String to Integer (atoi)
+Code exists for :-  Container With Most Water
+Code exists for :-  Integer to Roman
+Code exists for :-  Longest Common Prefix
+Code exists for :-  3Sum Closest
+Code exists for :-  Remove Nth Node From End of List
+Code exists for :-  Valid Parentheses
+Code exists for :-  Merge Two Sorted Lists
+Code exists for :-  Merge k Sorted Lists
+Code exists for :-  Swap Nodes in Pairs
+Code exists for :-  Remove Duplicates from Sorted Array
+Code exists for :-  Remove Element
+Code exists for :-  Find the Index of the First Occurrence in a String
+Code exists for :-  Search in Rotated Sorted Array
+Code exists for :-  Search Insert Position
+Code exists for :-  Valid Sudoku
+Code exists for :-  Count and Say
+Code exists for :-  Combination Sum
+Code exists for :-  Combination Sum II
+Code exists for :-  Trapping Rain Water
+Code exists for :-  Multiply Strings
+Code exists for :-  Jump Game II
+Code exists for :-  Permutations
+Code exists for :-  Group Anagrams
+Code exists for :-  Maximum Subarray
+Code exists for :-  Spiral Matrix
+Code exists for :-  Jump Game
+Code exists for :-  Merge Intervals
+Code exists for :-  Insert Interval
+Code exists for :-  Spiral Matrix II
+Code exists for :-  Rotate List
+Code exists for :-  Unique Paths
+Code exists for :-  Unique Paths II
+Code exists for :-  Minimum Path Sum
+Code exists for :-  Add Binary
+Code exists for :-  Climbing Stairs
+Code exists for :-  Simplify Path
+Code exists for :-  Edit Distance
+Code exists for :-  Set Matrix Zeroes
+Code exists for :-  Search a 2D Matrix
+Code exists for :-  Minimum Window Substring
+Code exists for :-  Word Search
+Code exists for :-  Scramble String
+Code exists for :-  Merge Sorted Array
+Code exists for :-  Subsets II
+Code exists for :-  Decode Ways
+Code exists for :-  Reverse Linked List II
+Code exists for :-  Restore IP Addresses
+Code exists for :-  Unique Binary Search Trees II
+Code exists for :-  Unique Binary Search Trees
+Code exists for :-  Validate Binary Search Tree
+Code exists for :-  Same Tree
+Code exists for :-  Symmetric Tree
+Code exists for :-  Binary Tree Level Order Traversal
+Code exists for :-  Binary Tree Zigzag Level Order Traversal
+Code exists for :-  Maximum Depth of Binary Tree
+Code exists for :-  Construct Binary Tree from Inorder and Postorder Traversal
+Code exists for :-  Convert Sorted Array to Binary Search Tree
+Code exists for :-  Convert Sorted List to Binary Search Tree
+Code exists for :-  Balanced Binary Tree
+Code exists for :-  Minimum Depth of Binary Tree
+Code exists for :-  Populating Next Right Pointers in Each Node
+Code exists for :-  Pascal's Triangle
+Code exists for :-  Pascal's Triangle II
+Code exists for :-  Triangle
+Code exists for :-  Best Time to Buy and Sell Stock
+Code exists for :-  Best Time to Buy and Sell Stock II
+Code exists for :-  Best Time to Buy and Sell Stock III
+Code exists for :-  Binary Tree Maximum Path Sum
+Code exists for :-  Sum Root to Leaf Numbers
+Code exists for :-  Palindrome Partitioning
+Code exists for :-  Clone Graph
+Code exists for :-  Gas Station
+Code exists for :-  Single Number II
+Code exists for :-  Word Break
+Code exists for :-  Linked List Cycle
+Code exists for :-  Linked List Cycle II
+Code exists for :-  Binary Tree Preorder Traversal
+Code exists for :-  Sort List
+Code exists for :-  Max Points on a Line
+Code exists for :-  Evaluate Reverse Polish Notation
+Code exists for :-  Reverse Words in a String
+Code exists for :-  Maximum Product Subarray
+Code exists for :-  Find Minimum in Rotated Sorted Array
+Code exists for :-  Min Stack
+Code exists for :-  Intersection of Two Linked Lists
+Code exists for :-  Binary Search Tree Iterator
+Code exists for :-  House Robber
+Code exists for :-  Binary Tree Right Side View
+Code exists for :-  Number of Islands
+Code exists for :-  Happy Number
+Code exists for :-  Remove Linked List Elements
+Code exists for :-  Isomorphic Strings
+Code exists for :-  Reverse Linked List
+Code exists for :-  Implement Trie (Prefix Tree)
+Code exists for :-  Minimum Size Subarray Sum
+Code exists for :-  Course Schedule II
+Code exists for :-  Design Add and Search Words Data Structure
+Code exists for :-  Word Search II
+Code exists for :-  House Robber II
+Code exists for :-  Contains Duplicate II
+Code exists for :-  Maximal Square
+Code exists for :-  Count Complete Tree Nodes
+Code exists for :-  Rectangle Area
+Code exists for :-  Basic Calculator
+Code exists for :-  Invert Binary Tree
+Code exists for :-  Basic Calculator II
+Code exists for :-  Summary Ranges
+Code exists for :-  Kth Smallest Element in a BST
+Code exists for :-  Implement Queue using Stacks
+Code exists for :-  Palindrome Linked List
+Code exists for :-  Lowest Common Ancestor of a Binary Search Tree
+Code exists for :-  Delete Node in a Linked List
+Code exists for :-  Add Digits
+Code exists for :-  Ugly Number
+Code exists for :-  Ugly Number II
+Code exists for :-  First Bad Version
+Code exists for :-  Perfect Squares
+Code exists for :-  Move Zeroes
+Code exists for :-  Word Pattern
+Code exists for :-  Find Median from Data Stream
+Code exists for :-  Bulls and Cows
+Code exists for :-  Longest Increasing Subsequence
+Code exists for :-  Range Sum Query - Immutable
+Code exists for :-  Range Sum Query 2D - Immutable
+Code exists for :-  Best Time to Buy and Sell Stock with Cooldown
+Code exists for :-  Bulb Switcher
+Code exists for :-  Coin Change
+Code exists for :-  Odd Even Linked List
+Code exists for :-  Patching Array
+Code exists for :-  Verify Preorder Serialization of a Binary Tree
+Code exists for :-  Increasing Triplet Subsequence
+Code exists for :-  House Robber III
+Code exists for :-  Integer Break
+Code exists for :-  Reverse Vowels of a String
+Code exists for :-  Top K Frequent Elements
+Code exists for :-  Data Stream as Disjoint Intervals
+Code exists for :-  Find K Pairs with Smallest Sums
+Code exists for :-  Guess Number Higher or Lower
+Code exists for :-  Wiggle Subsequence
+Code exists for :-  Combination Sum IV
+Code exists for :-  Insert Delete GetRandom O(1)
+Code exists for :-  Linked List Random Node
+Code exists for :-  Is Subsequence
+Code exists for :-  Decode String
+Code exists for :-  Evaluate Division
+Code exists for :-  Longest Palindrome
+Code exists for :-  Arithmetic Slices
+Code exists for :-  Third Maximum Number
+Code exists for :-  Add Strings
+Code exists for :-  Partition Equal Subset Sum
+Code exists for :-  Pacific Atlantic Water Flow
+Code exists for :-  Longest Repeating Character Replacement
+Code exists for :-  Construct Quad Tree
+Code exists for :-  Flatten a Multilevel Doubly Linked List
+Code exists for :-  Minimum Genetic Mutation
+Code exists for :-  Path Sum III
+Code exists for :-  Find All Anagrams in a String
+Code exists for :-  String Compression
+Code exists for :-  Arithmetic Slices II - Subsequence
+Code exists for :-  Find All Numbers Disappeared in an Array
+Code exists for :-  Sort Characters By Frequency
+Code exists for :-  Minimum Number of Arrows to Burst Balloons
+Code exists for :-  LFU Cache
+Code exists for :-  Minimum Moves to Equal Array Elements II
+Code exists for :-  Concatenated Words
+Code exists for :-  Max Consecutive Ones
+Code exists for :-  Non-decreasing Subsequences
+Code exists for :-  IPO
+Code exists for :-  Fibonacci Number
+Code exists for :-  Longest Palindromic Subsequence
+Code exists for :-  Coin Change II
+Code exists for :-  Detect Capital
+Code exists for :-  Longest Uncommon Subsequence II
+Code exists for :-  Continuous Subarray Sum
+Code exists for :-  Minimum Absolute Difference in BST
+Code exists for :-  Complex Number Multiplication
+Code exists for :-  Single Element in a Sorted Array
+Code exists for :-  Diameter of Binary Tree
+Code exists for :-  Number of Provinces
+Code exists for :-  Array Nesting
+Code exists for :-  Permutation in String
+Code exists for :-  Erect the Fence
+Code exists for :-  N-ary Tree Preorder Traversal
+Code exists for :-  Range Addition II
+Code exists for :-  Can Place Flowers
+Code exists for :-  Task Scheduler
+Code exists for :-  Sum of Square Numbers
+Code exists for :-  Set Mismatch
+Code exists for :-  Dota2 Senate
+Code exists for :-  Find Duplicate Subtrees
+Code exists for :-  Two Sum IV - Input is a BST
+Code exists for :-  Maximum Width of Binary Tree
+Code exists for :-  Top K Frequent Words
+Code exists for :-  Kth Largest Element in a Stream
+Code exists for :-  Binary Search
+Code exists for :-  Design HashSet
+Code exists for :-  Design Linked List
+Code exists for :-  Best Time to Buy and Sell Stock with Transaction Fee
+Code exists for :-  Find Pivot Index
+Code exists for :-  Flood Fill
+Code exists for :-  Asteroid Collision
+Code exists for :-  Monotone Increasing Digits
+Code exists for :-  Daily Temperatures
+Code exists for :-  Delete and Earn
+Code exists for :-  Find Smallest Letter Greater Than Target
+Code exists for :-  Min Cost Climbing Stairs
+Code exists for :-  Toeplitz Matrix
+Code exists for :-  Minimum Distance Between BST Nodes
+Code exists for :-  Is Graph Bipartite?
+Scraping the code for :-  Cheapest Flights Within K Stops
+    newer theme is already on to scrap data      
+Scraping the code for :-  Domino and Tromino Tiling
+    newer theme is already on to scrap data      
+Scraping the code for :-  All Paths From Source to Target
+    newer theme is already on to scrap data      
+Scraping the code for :-  Find Eventual Safe States
+    newer theme is already on to scrap data      
+Scraping the code for :-  Bus Routes
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sum of Distances in Tree
+    newer theme is already on to scrap data      
+Scraping the code for :-  Image Overlap
+    newer theme is already on to scrap data      
+Scraping the code for :-  New 21 Game
+    newer theme is already on to scrap data      
+Scraping the code for :-  Similar String Groups
+    newer theme is already on to scrap data      
+Scraping the code for :-  Keys and Rooms
+    newer theme is already on to scrap data      
+Scraping the code for :-  Backspace String Compare
+    newer theme is already on to scrap data      
+Scraping the code for :-  Buddy Strings
+    newer theme is already on to scrap data      
+Scraping the code for :-  All Nodes Distance K in Binary Tree
+    newer theme is already on to scrap data      
+Scraping the code for :-  Shortest Path to Get All Keys
+    newer theme is already on to scrap data      
+Scraping the code for :-  Leaf-Similar Trees
+    newer theme is already on to scrap data      
+Scraping the code for :-  Koko Eating Bananas
+    newer theme is already on to scrap data      
+Scraping the code for :-  Middle of the Linked List
+    newer theme is already on to scrap data      
+Scraping the code for :-  Stone Game
+    newer theme is already on to scrap data      
+Scraping the code for :-  Nth Magical Number
+    newer theme is already on to scrap data      
+Scraping the code for :-  Profitable Schemes
+    newer theme is already on to scrap data      
+Scraping the code for :-  Boats to Save People
+    newer theme is already on to scrap data      
+Scraping the code for :-  Possible Bipartition
+    newer theme is already on to scrap data      
+Scraping the code for :-  Monotonic Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Orderly Queue
+    newer theme is already on to scrap data      
+Scraping the code for :-  Online Stock Span
+    newer theme is already on to scrap data      
+Scraping the code for :-  Fruit Into Baskets
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sort Array By Parity
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sum of Subarray Minimums
+    newer theme is already on to scrap data      
+Scraping the code for :-  Snakes and Ladders
+    newer theme is already on to scrap data      
+Scraping the code for :-  Sort an Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Maximum Sum Circular Subarray
+    newer theme is already on to scrap data      
+Scraping the code for :-  Flip String to Monotone Increasing
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Falling Path Sum
+    newer theme is already on to scrap data      
+Scraping the code for :-  Shortest Bridge
+    newer theme is already on to scrap data      
+Scraping the code for :-  Range Sum of BST
+    newer theme is already on to scrap data      
+Scraping the code for :-  Valid Mountain Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Delete Columns to Make Sorted
+    newer theme is already on to scrap data      
+Scraping the code for :-  Validate Stack Sequences
+    newer theme is already on to scrap data      
+Scraping the code for :-  Most Stones Removed with Same Row or Column
+    newer theme is already on to scrap data      
+Scraping the code for :-  Verifying an Alien Dictionary
+    newer theme is already on to scrap data      
+Scraping the code for :-  Array of Doubled Pairs
+    newer theme is already on to scrap data      
+Scraping the code for :-  Tallest Billboard
+    newer theme is already on to scrap data      
+Scraping the code for :-  Check Completeness of a Binary Tree
+    newer theme is already on to scrap data      
+Scraping the code for :-  Subarray Sums Divisible by K
+    newer theme is already on to scrap data      
+Scraping the code for :-  Largest Perimeter Triangle
+    newer theme is already on to scrap data      
+Scraping the code for :-  Squares of a Sorted Array
+    newer theme is already on to scrap data      
+Scraping the code for :-  Unique Paths III
+    newer theme is already on to scrap data      
+Scraping the code for :-  Minimum Cost For Tickets
+    newer theme is already on to scrap data      
+Scraping the code for :-  Add to Array-Form of Integer
+    newer theme is already on to scrap data      
+Scraping the code for :-  Rotting Oranges
+    newer theme is already on to scrap data      
+Unable to choose Accepted solution, picking the 1st solution Message: element not interactable
+  (Session info: chrome=114.0.5735.198)
+Stacktrace:
+0   chromedriver                        0x00000001027cbf48 chromedriver + 4226888
+1   chromedriver                        0x00000001027c44f4 chromedriver + 4195572
+2   chromedriver                        0x0000000102408be8 chromedriver + 281576
+3   chromedriver                        0x0000000102445674 chromedriver + 530036
+4   chromedriver                        0x0000000102439eec chromedriver + 483052
+5   chromedriver                        0x0000000102439734 chromedriver + 481076
+6   chromedriver                        0x000000010247ac58 chromedriver + 748632
+7   chromedriver                        0x0000000102437f1c chromedriver + 474908
+8   chromedriver                        0x0000000102438ef4 chromedriver + 478964
+9   chromedriver                        0x000000010278d59c chromedriver + 3970460
+10  chromedriver                        0x00000001027916f0 chromedriver + 3987184
+11  chromedriver                        0x00000001027975b4 chromedriver + 4011444
+12  chromedriver                        0x00000001027922fc chromedriver + 3990268
+13  chromedriver                        0x000000010276a1c0 chromedriver + 3826112
+14  chromedriver                        0x00000001027ae088 chromedriver + 4104328
+15  chromedriver                        0x00000001027ae1e0 chromedriver + 4104672
+16  chromedriver                        0x00000001027bdf28 chromedriver + 4169512
+17  libsystem_pthread.dylib             0x000000018ed93fa8 _pthread_start + 148
+18  libsystem_pthread.dylib             0x000000018ed8eda0 thread_start + 8
+
+Scraping the code for :-  Find the Town Judge
+    newer theme is already on to scrap data      
+Error in copying the solution of https://leetcode.com/problems/find-the-town-judge Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="qd-content"]/div[3]/div/div[1]/div/div[1]/div[2]/div[7]/div/div"}
+  (Session info: chrome=114.0.5735.198); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x00000001027cbf48 chromedriver + 4226888
+1   chromedriver                        0x00000001027c44f4 chromedriver + 4195572
+2   chromedriver                        0x0000000102408d68 chromedriver + 281960
+3   chromedriver                        0x0000000102443fc8 chromedriver + 524232
+4   chromedriver                        0x000000010247ac58 chromedriver + 748632
+5   chromedriver                        0x0000000102437f1c chromedriver + 474908
+6   chromedriver                        0x0000000102438ef4 chromedriver + 478964
+7   chromedriver                        0x000000010278d59c chromedriver + 3970460
+8   chromedriver                        0x00000001027916f0 chromedriver + 3987184
+9   chromedriver                        0x00000001027975b4 chromedriver + 4011444
+10  chromedriver                        0x00000001027922fc chromedriver + 3990268
+11  chromedriver                        0x000000010276a1c0 chromedriver + 3826112
+12  chromedriver                        0x00000001027ae088 chromedriver + 4104328
+13  chromedriver                        0x00000001027ae1e0 chromedriver + 4104672
+14  chromedriver                        0x00000001027bdf28 chromedriver + 4169512
+15  libsystem_pthread.dylib             0x000000018ed93fa8 _pthread_start + 148
+16  libsystem_pthread.dylib             0x000000018ed8eda0 thread_start + 8
+
+Scraping the code for :-  Capacity To Ship Packages Within D Days
+    newer theme is already on to scrap data      
+Scraping the code for :-  Best Sightseeing Pair
+    newer theme is already on to scrap data      
+Scraping the code for :-  Number of Enclaves

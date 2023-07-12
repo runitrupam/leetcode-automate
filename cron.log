@@ -1,0 +1,104 @@
+cron is working 2023-07-05 09:43:00.466431
+cron is working 2023-07-05 09:44:00.702547
+cron is working 2023-07-05 09:45:00.984535
+cron is working 2023-07-05 09:46:01.251167
+cron is working 2023-07-05 09:47:00.484498
+cron is working 2023-07-05 09:48:00.772862
+cron is working 2023-07-05 09:49:01.045239
+cron is working 2023-07-05 09:50:01.039979
+cron is working 2023-07-05 09:51:00.348097
+cron is working 2023-07-05 09:52:00.721130
+cron is working 2023-07-05 09:53:01.040274
+cron is working 2023-07-05 09:54:00.267475
+cron is working 2023-07-05 09:55:00.440461
+cron is working 2023-07-05 09:56:00.711133
+cron is working 2023-07-05 09:57:00.946833
+cron is working 2023-07-05 09:58:01.171771
+cron is working 2023-07-05 09:59:00.471259
+cron is working 2023-07-05 10:00:00.705083
+cron is working 2023-07-05 10:01:00.783124
+cron is working 2023-07-05 10:01:18.172595
+cron is working 2023-07-05 10:01:26.354616
+cron is working 2023-07-05 10:02:01.020929
+cron is working 2023-07-05 10:03:00.236614
+cron is working 2023-07-05 10:04:00.628072
+cron is working 2023-07-05 10:05:00.996788
+cron is working 2023-07-05 10:06:00.267743
+cron is working 2023-07-05 10:07:00.598610
+cron is working 2023-07-05 10:08:00.881253
+cron is working 2023-07-05 10:09:01.176314
+cron is working 2023-07-05 10:10:00.499446
+cron is working 2023-07-05 10:11:00.666161
+cron is working 2023-07-05 10:12:00.892202
+cron is working 2023-07-05 10:13:01.295170
+cron is working 2023-07-05 10:14:00.562682
+cron is working 2023-07-05 10:15:00.855011
+cron is working 2023-07-05 10:16:01.121657
+cron is working 2023-07-05 10:17:00.345420
+cron is working 2023-07-05 10:18:00.579871
+cron is working 2023-07-05 10:19:00.836070
+cron is working 2023-07-05 10:20:01.055486
+cron is working 2023-07-05 10:21:00.326166
+cron is working 2023-07-05 10:22:00.558727
+cron is working 2023-07-05 10:23:00.776503
+Traceback (most recent call last):
+  File "/Users/rranjan/ml/Scrape-LeetCode-Solutions-master/check_cron.py", line 3, in <module>
+    print('cron is working',datetime.datetime.now(),1/0)
+ZeroDivisionError: division by zero
+zsh: no such file or directory: 0-59/10
+Traceback (most recent call last):
+  File "/Users/rranjan/ml/Scrape-LeetCode-Solutions-master/check_cron.py", line 3, in <module>
+    print('cron is working',datetime.datetime.now(),1/0)
+ZeroDivisionError: division by zero
+zsh: no such file or directory: 0-59/10
+Traceback (most recent call last):
+  File "/Users/rranjan/ml/Scrape-LeetCode-Solutions-master/check_cron.py", line 3, in <module>
+    print('cron is working',datetime.datetime.now(),1/0)
+ZeroDivisionError: division by zero
+cron is working 2023-07-05 10:27:00.840089
+cron is working 2023-07-05 10:28:01.080450
+cron is working 2023-07-05 10:29:00.348059
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 617, in <module>
+    main()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 600, in main
+    known_paths = venv(known_paths)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 518, in venv
+    with open(virtual_conf, encoding='utf-8') as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/rranjan/Downloads/Scrape-LeetCode-Solutions-master/venv/pyvenv.cfg'
+cron is working 2023-07-05 10:30:00.665038
+cron is working 2023-07-05 10:31:01.085903
+cron is working 2023-07-05 10:32:00.387635
+cron is working 2023-07-05 10:33:00.658039
+cron is working 2023-07-05 10:34:00.997469
+cron is working 2023-07-05 10:35:00.406821
+cron is working 2023-07-05 10:36:00.664966
+cron is working 2023-07-05 10:37:00.947665
+cron is working 2023-07-05 10:38:01.195150
+cron is working 2023-07-05 10:39:00.925234
+Fatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 617, in <module>
+    main()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 600, in main
+    known_paths = venv(known_paths)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site.py", line 518, in venv
+    with open(virtual_conf, encoding='utf-8') as f:
+PermissionError: [Errno 1] Operation not permitted: '/Users/rranjan/Downloads/Scrape-LeetCode-Solutions-master/venv/pyvenv.cfg'
+cron is working 2023-07-05 10:40:01.546687
+cron is working 2023-07-05 10:41:01.175053
+cron is working 2023-07-05 10:42:00.439610
+cron is working 2023-07-05 10:43:00.585515
+cron is working 2023-07-05 10:44:00.809194
+cron is working 2023-07-05 10:45:01.019093
+cron is working 2023-07-05 10:46:00.272404
+cron is working 2023-07-05 10:47:00.507880
+cron is working 2023-07-05 10:48:00.780929
+cron is working 2023-07-05 11:00:00.512663
+cron is working 2023-07-07 13:00:02.463187
+cron is working 2023-07-10 13:00:01.692971
+cron is working 2023-07-11 13:00:02.046905
+cron is working 2023-07-11 22:10:36.428859

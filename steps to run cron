@@ -1,0 +1,44 @@
+Go to this site for better understanding --> 
+https://towardsdatascience.com/how-to-schedule-python-scripts-with-cron-the-only-guide-youll-ever-need-deea2df63b4e
+
+https://crontab.guru/
+
+in mac or ubuntu ,
+run the command and paste the below code.
+
+crontab -e
+THis will open a vi editor.
+
+
+1 11 * * *
+# will run the ocde daily at 11:01 hours.
+
+0-59/10 * * * *
+* = for each minute or hour ...
+0-59 = start from 0 and go till 59 minute
+will run the code for every 10 minute,daily 
+
+
+path of python file = '/Users/rranjan/opt/anaconda3/bin/python'
+can be obtained using the command -> 'which python'
+
+'>>' = used to append to a file .
+
+NOTE:the virtualenv should be in /opt folder or other directory not the user directory. for the cron to run it.
+
+# Running leetcode_scraper.py
+
+0-59/10 * * * * /Users/rranjan/opt/anaconda3/bin/python /Users/rranjan/ml/Scrape-LeetCode-Solutions-master/leetcode_scraper.py >> /Users/rranjan/ml/Scrape-LeetCode-Solutions-master/check_cron.log
+or,  Won't work as in Downloads
+0-59/10 * * * * /Users/rranjan/Downloads/Scrape-LeetCode-Solutions-master/venv/bin/python /Users/rranjan/ml/Scrape-LeetCode-Solutions-master/leetcode_scraper.py >> /Users/rranjan/ml/Scrape-LeetCode-Solutions-master/check_cron.log
+
+or, This works
+1 13 * * * * /Users/rranjan/ml/leetcode_automate/new_venv2/bin/python /Users/rranjan/ml/leetcode_automate/leetcode_scraper.py >> /Users/rranjan/ml/leetcode_automate/check_cron.log
+
+
+# Running check_cron.py
+
+
+0-59/1 * * * * /Users/rranjan/opt/anaconda3/bin/python /Users/rranjan/ml/leetcode_automate/check_cron.py >> /Users/rranjan/ml/leetcode_automate/check_cron.log
+
+0 13 * * * /Users/rranjan/opt/anaconda3/bin/python /Users/rranjan/ml/leetcode_automate/check_cron.py >> /Users/rranjan/ml/leetcode_automate/check_cron.log
