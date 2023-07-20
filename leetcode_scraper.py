@@ -25,6 +25,8 @@ import leetcode
 import datetime
 # import tkinter as tk  # for the copy of text to clipboard or from clipboard , somehow not working to clear the clipboard
 import pyperclip  # can be used to copy from clipboard as well as clear the clipboard
+import threading
+import queue
 
 from utils import *
 
@@ -40,6 +42,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 CODE_DRIVER = webdriver.Chrome()
 load_dotenv()  # To load the .env file
 
+lock = threading.Lock()
 
 def sign_into_leetcode():
     '''
@@ -168,11 +171,15 @@ def scrape_code(href, url=None):
     text.
 
     '''
+    print('start time for ',href,datetime.datetime.now().time())
     language = 'Python'  # default if none selected
     wait = WebDriverWait(CODE_DRIVER, 80)
     code = ""
-    # CODE_DRIVER.execute_script("window.open('');")
+    lock.acquire()
+    CODE_DRIVER.execute_script("window.open('');")
     CODE_DRIVER.switch_to.window(CODE_DRIVER.window_handles[-1])
+    lock.release()
+
     if url is None:
         CODE_DRIVER.get(href + "/submissions/")
     else:
@@ -254,11 +261,21 @@ def scrape_code(href, url=None):
         # print(1)
         print(code)
         '''
+    print('End time for ',href,datetime.datetime.now().time())
     return code, language
+
+def handle_scraping_of_given_problems(title_href, title_list):
+    # This function will scrap a site only once 
+    # as we are using threading approach, memory is shared
+    while title_list:
+        title = title_list.pop() # if one site is scraped it will search for another
+        code, language = scrape_code(title_href[title])
+        create_file(title, code, language)
 
 
 def scrap_all_accepted_solution():
     """
+    will work if you put choose_program = B in .env file.
     This function opens the algorithms and scrapes your code off each problem.
     It then stores it into a file.
 
@@ -339,16 +356,37 @@ def scrap_all_accepted_solution():
     title_href_json_obj = f.read()
     title_href_dict = json.loads(title_href_json_obj)
     '''
-
+    title_list = []
     for title in title_href:
         file_exists = create_file(title, code = '', check_file_exists = 1)
         if file_exists:
             print("Code exists for :- ", title)
             continue
-        print("Scraping the code for :- ", title)
+        title_list.append(title)
+            
+    
+    threads = []
+    max_threads = 7
+    # Start threads for parallel scraping
+    for _ in range(max_threads):
+        thread = threading.Thread(target = handle_scraping_of_given_problems,args = (title_href, title_list,))
+        threads.append(thread)
+        thread.start()
 
-        code, language = scrape_code(title_href[title])
-        create_file(title, code, language)
+    # Wait for all threads to complete
+    for thread in threads:
+        thread.join()
+
+    # for title in title_href:
+    #     file_exists = create_file(title, code = '', check_file_exists = 1)
+    #     if file_exists:
+    #         print("Code exists for :- ", title)
+    #         continue
+    #     print("Scraping the code for :- ", title)
+    # 
+    #     code, language = scrape_code(title_href[title])
+    #     create_file(title, code, language)
+
 
 
 def choose_top_solutions(CODE_DRIVER, language_selected):
